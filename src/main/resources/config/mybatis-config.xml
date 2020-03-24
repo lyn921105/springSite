@@ -1,13 +1,14 @@
-
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE configuration
   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<typeAliases>
-	<typeAlias type="com.spring.clint.board.vo.BoardVO" alias="board"/>
-	<typeAlias type="com.spring.clint.reply.vo.ReplyVO" alias="reply"/>
-	<typeAlias type="com.spring.clint.gallery.vo.GalleryVO" alias="gallery"/>
-	<typeAlias type="com.spring.clint.login.vo.LoginVO" alias="login"/>
+		<typeAlias type="com.spring.client.board.vo.BoardVO" alias="board"/>
+		<typeAlias type="com.spring.client.riply.vo.ReplyVO" alias="reply"/>
+		<typeAlias type="com.spring.client.gallery.vo.GalleryVO" alias="gallery"/>
+		<typeAlias type="com.spring.client.login.vo.LoginVO" alias="login"/>
+		<typeAlias type="com.spring.client.member.vo.MemberVO" alias="member"/>
+		<typeAlias type="com.spring.client.member.vo.MemberSecurity" alias="security"/>
 	</typeAliases>
 </configuration>

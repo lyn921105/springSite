@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import com.spring.client.board.dao.BoardDao;
 import com.spring.client.board.vo.BoardVO;
-import com.spring.common.page.Paging;
 
 @Service
 @Transactional
@@ -21,7 +20,7 @@ public class AdminBoardServiceImpl implements AdminBoardService {
 		List<BoardVO> aList = null;
 		
 		// 페이지 세팅
-		Paging.setPage(bvo);
+		//Paging.setPage(bvo);
 		
 		// 정렬에 대한 기본값 설정
 		if (bvo.getOrder_by() == null) {
@@ -39,11 +38,12 @@ public class AdminBoardServiceImpl implements AdminBoardService {
 		return aList;
 	}
 
+	// 페이징 할때 변경
 	@Override
 	public int boardListCnt(BoardVO bvo) {
 		// TODO Auto-generated method stub
 		int countNum = 0;
-		countNum = boardDao.boardListCnt(bvo);
+		// countNum = boardDao.boardListCnt(bvo);
 		return countNum;
 	}
 

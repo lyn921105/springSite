@@ -42,11 +42,11 @@ public class MemberVO extends LoginVO {
 		this.phone = phone;
 	}
 
-	public String getJoinDate() {
+	public Timestamp getJoinDate() {
 		return joinDate;
 	}
 
-	public void setJoinDate(String joinDate) {
+	public void setJoinDate(Timestamp joinDate) {
 		this.joinDate = joinDate;
 	}
 

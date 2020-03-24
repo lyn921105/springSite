@@ -7,7 +7,8 @@ import org.springframework.transaction.annotation.Transactional;
 import com.spring.client.member.dao.MemberDao;
 import com.spring.client.member.vo.MemberSecurity;
 import com.spring.client.member.vo.MemberVO;
-import com.spring.common.util.*;
+import com.spring.common.util.OpenCrypt;
+import com.spring.common.util.Util;
 
 @Service
 @Transactional
@@ -39,7 +40,7 @@ public class MemberServiceImpl implements MemberService {
 				sCode = memberDao.securityInsert(sec);
 
 				if (sCode == 1) {
-					mvo.setUserPw(new String(Opencrypt.getSHA256(mvo.getUserPw(), sec.getSalt())));
+					mvo.setUserPw(new String(OpenCrypt.getSHA256(mvo.getUserPw(), sec.getSalt())));
 					memberDao.memberInsert(mvo);
 					return 3;
 				} else {

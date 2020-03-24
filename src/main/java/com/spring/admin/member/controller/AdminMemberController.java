@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.spring.admin.member.service.AdminMemberService;
+import com.spring.client.member.vo.MemberVO;
 import com.spring.common.graph.ChartMake;
 
 @Controller

@@ -6,7 +6,7 @@ import java.util.Map;
 import com.spring.client.member.vo.MemberVO;
 
 public interface AdminMemberService {
-	public List<MemberVO> memberList(MemberVO bvo);
+	public List<MemberVO> memberList(MemberVO mvo);
 	public Map<String, Integer> memberAgeList();
 	public Map<String, Integer> memberGenderList();
 }

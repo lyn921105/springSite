@@ -6,7 +6,7 @@
 	<resultMap type="java.util.TreeMap" id="graph"/>
 	
 	<!-- 회원 기본 조회 -->
-	<select id="MemberList" resultType="member">
+	<select id="memberList" resultType="member">
 		SELECT idx, userpw, pinno, joindate
 		,regexp_replace(userid, '.', '*', 4) AS userid
 		,regexp_replace(username, '.', '*', 2) AS username

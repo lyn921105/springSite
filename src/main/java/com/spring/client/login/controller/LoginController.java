@@ -35,7 +35,7 @@ public class LoginController {
 		log.info("login.do post 호출 성공");
 		ModelAndView mav = new ModelAndView();
 		String userId = lvo.getUserId();
-		int resultData = loginService.loginHistoryInserts(lvo);
+		int resultData = loginService.loginHistoryInsert(lvo);
 		
 		if (resultData == 1) {
 			mav.addObject("errCode", 1);

@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.spring.admin.board.service.AdminBoardService;
+import com.spring.client.board.vo.BoardVO;
 import com.spring.common.excel.ListExcelView;
 
-import org.spring.client.board.vo.BoardVO;
 
 @Controller
 @RequestMapping(value="/admin")

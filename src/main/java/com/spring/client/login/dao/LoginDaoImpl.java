@@ -13,7 +13,7 @@ public class LoginDaoImpl implements LoginDao {
 	private SqlSession session;
 	
 	@Override
-	public LoginVO userIdselect(String userId) {
+	public LoginVO userIdSelect(String userId) {
 		return (LoginVO) session.selectOne("userIdSelect", userId);
 	}
 

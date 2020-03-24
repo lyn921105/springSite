@@ -61,4 +61,15 @@ function inputVerify(index,data, printarea) {
 	
 }
 
-
+function getDateFormat(dateValue) {
+	var year = dateValue.getFullYear();
+	
+	var month = dateValue.getMonth() + 1;
+	month = (month < 10) ? "0" + month : month;
+	
+	var day = dateValue.getDate();
+	day = (day < 10) ? "0" + day : day;
+	
+	var result = year + "-" + month + "-" + day;
+	return result;
+}
